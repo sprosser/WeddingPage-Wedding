@@ -9,4 +9,19 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Wedding::Application.config.secret_key_base = 'b2b70a3c519aceff91fee34e106bcf08c324d99f116413bd008f1bace76c2fe09263b101b0e19eba9027267e77d97ce9f6499963f7bec2a9b3dbc31b7ec63ddb'
+require 'securerandom'
+
+def secure_token
+  token_file = Rails.root.join('.secret')
+  if File.exist?(token_file)
+    # Use the existing token.
+    File.read(token_file).chomp
+  else
+    # Generate a new token and store it in token_file.
+    token = SecureRandom.hex(64)
+    File.write(token_file, token)
+    token
+  end
+end
+
+SampleApp::Application.config.secret_key_base = secure_token
