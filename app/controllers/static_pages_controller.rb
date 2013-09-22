@@ -4,4 +4,7 @@ class StaticPagesController < ApplicationController
 
   def details
   end
+
+  def couple
+  end
 end
