@@ -1,7 +1,9 @@
 Wedding::Application.routes.draw do
-  get "static_pages/home"
-  get "static_pages/details"
-  get "static_pages/couple"
+  root  'static_pages#home'
+  match '/details', to: 'static_pages#details', via: 'get'
+  match '/couple',  to: 'static_pages#couple',  via: 'get'
+  match '/contact', to: 'static_pages#contact', via: 'get'
+  match '/news',    to: 'static_pages#news',    via: 'get'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
