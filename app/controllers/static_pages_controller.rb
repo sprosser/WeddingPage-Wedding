@@ -7,4 +7,11 @@ class StaticPagesController < ApplicationController
 
   def couple
   end
+
+  def contact
+  end
+
+  def news
+  end
+  
 end

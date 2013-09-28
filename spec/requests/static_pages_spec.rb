@@ -1,45 +1,45 @@
 require 'spec_helper'
 
-describe "Static pages" do
+# describe "Static pages" do
 
-  let(:base_title) { "A Jurassic Wedding" }
+#   subject { page }
 
-  describe "Home page" do
+#   describe "Home page" do
+#     before { visit root_path }
 
-    it "should have the content 'Wedding Time'" do
-      visit '/static_pages/home'
-      expect(page).to have_content('Wedding Time')
-    end
+#     it { should have_content('Wedding Time') }
+#     it { should have_title(full_title('')) }
+#     it { should_not have_title('| Home') }
+#   end
 
-    it "should have the title 'Home'" do
-      visit '/static_pages/home'
-      expect(page).to have_title("#{base_title} | Home")
-    end
-  end
+#   describe "Details page" do
+#     before { visit details_path }
 
-  describe "Details page" do
+#     it { should have_content('Details') }
+#     it { should have_title(full_title('Details')) }
+#   end
 
-    it "should have the content 'Wedding Details'" do
-      visit '/static_pages/details'
-      expect(page).to have_content('Wedding Details')
-    end
+#   describe "Couple page" do
+#     before { visit couple_path }
 
-    it "should have the title 'Details'" do
-      visit '/static_pages/details'
-      expect(page).to have_title("#{base_title} | Details")
-    end
-  end
+#     it { should have_content('Couple') }
+#     it { should have_title(full_title('Couple')) }
+#   end
 
-  describe "Couple page" do
+#   describe "Contact page" do
+#     before { visit contact_path }
 
-    it "should have the content 'Amanda and Steve'" do
-      visit '/static_pages/couple'
-      expect(page).to have_content('Amanda and Steve')
-    end
+#     it { should have_content('Contact') }
+#     it { should have_title(full_title('Contact')) }
+#   end
 
-    it "should have the title 'Couple'" do
-      visit '/static_pages/couple'
-      expect(page).to have_title("#{base_title} | Couple")
-    end
-  end
-end
+#   describe "News page" do
+#     before { visit news_path }
+
+#     it { should have_content('News') }
+#     it { should have_title(full_title('News')) }
+#   end
+# end
+
+
+  
