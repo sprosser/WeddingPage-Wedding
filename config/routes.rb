@@ -1,4 +1,8 @@
 Wedding::Application.routes.draw do
+  get 'auth/:provider/callback', to: 'sessions#create'
+  get 'auth/failure', to: redirect('/')
+  get 'signout', to: 'sessions#destroy', as: 'signout'
+
   root  'static_pages#home'
   match '/details', to: 'static_pages#details', via: 'get'
   match '/couple',  to: 'static_pages#couple',  via: 'get'
