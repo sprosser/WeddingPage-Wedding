@@ -8,6 +8,7 @@ html {
 
 body {
   padding-top: 60px;
+  background-color:#EFE7DA;
 }
 
 section {
@@ -20,11 +21,11 @@ textarea {
 
 .center {
   text-align: center;
+  h1 {
+    margin-bottom: 10px;
+  }
 }
 
-.center h1 {
-  margin-bottom: 10px;
-}
 
 /* typography */
 
@@ -65,9 +66,28 @@ p {
   padding-top: 9px;
   font-weight: bold;
   line-height: 1;
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+  }
 }
 
-#logo:hover {
-  color: #fff;
-  text-decoration: none;
+/* footer */
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #999;
+  color: #999;
+  small {
+    float: left;
+  }
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 10px;
+    }
+  }
 }
