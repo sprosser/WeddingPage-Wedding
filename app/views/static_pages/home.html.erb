@@ -1,18 +1,32 @@
 <% provide(:title, 'Home') %>
 <h1>A Wedding to be Remembered</h1>
 <div class="center welcome">
-<div class="scroll_thing"><img src="/assets/ballsack.png"></div>
+  
+  <div class="scroll_thing"><img src="/assets/ballsack.png"></div>
   
   <span class="photo">
     <img src="/assets/amanda1.jpg">
   </span>
 
-  <span class="photo-tall">
-    &
+  <span class="photo-med">
+    <img src="/assets/Single_amp.png">
   </span>
 
   <span class="photo">
     <img src="/assets/steve1.jpg">
-  </span>
+  </span><br><br>
 
+  <h3> Welcome! </h3>
+
+  <h4>Thanks for swinging by the website for Amanda and Steve's Wedding! We are very excited for all of our friend and family to celebrate this joyous occasion. Below you will find links to all the information you could ever hope for!
+  </h4>
+  <br>
+  <div class="links">
+    <%= link_to "Wedding Details", details_path, {:style=>'color:#563D00;'} %> -
+    <%= link_to "Meet the Party", couple_path, {:style=>'color:#563D00;'} %> -
+    <%= link_to "RSVP", '#', {:style=>'color:#563D00;'} %> -
+    <%= link_to "Photos", '#', {:style=>'color:#563D00;'} %> -
+    <%= link_to "News", news_path, {:style=>'color:#563D00;'} %> -
+    <%= link_to "Contact", contact_path, {:style=>'color:#563D00;'} %>    
+  </div>
 </div>
